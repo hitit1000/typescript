@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs"
+  }
+}
+
+// 터미널 입력 :: tsc -w
+// 위 입력을 통해 실시간으로 ts -> js 로 변환
