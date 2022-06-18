@@ -25,7 +25,10 @@ class Dict{
   }
   del(term:string){
     if(this.words[term]){
-      console.log(this.words)
+      delete this.words[term]
+      console.log("delete completed")
+    }else{
+      console.log("delete failed - non-existent word")
     }
   }
 }
