@@ -1,9 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs"
-  }
+      "module": "commonjs",
+      "target": "ES2015",
+      "sourceMap": true,
+      "outDir": "dist"
+  },
+  "include": ["./**/*"],
+  "exclude": ["node_modules"]
+
 }
+
+// {
+//   "compilerOptions": {
+//     "target": "es5",
+//     "module": "commonjs"
+//   }
+// }
+
+
 
 // 터미널 입력 :: tsc -w
 // 위 입력을 통해 실시간으로 ts -> js 로 변환
