@@ -1,0 +1,8 @@
+npm init -y
+
+package.json 
+- main 제거
+- script 수정
+
+tsconfig.json 
+- 파일 생성 및 설정  

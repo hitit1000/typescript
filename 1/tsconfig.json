@@ -1,0 +1,11 @@
+{
+  "include": ["src"], // 변환 될 ts의 경로
+  "compilerOptions": {
+    "outDir": "build", // 변환 된 js의 경로
+    "target": "ES6", // 변환 된 js의 버전을 정의
+    "lib": ["ES6"], // 작성되는 ts 환경 설정 ( 버전, 실행 환경 (DOM:브라우저))
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "CommonJS"
+  }
+}
