@@ -18,3 +18,5 @@ class Block implements BlockShape {
     return crypto.createHash("sha256").update(toHash).digest("hex");
   }
 }
+
+// git 테스트
