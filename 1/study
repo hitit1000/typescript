@@ -1,8 +1,19 @@
 npm init -y
 
-package.json 
+package.json
+
 - main 제거
 - script 수정
 
-tsconfig.json 
-- 파일 생성 및 설정  
+tsconfig.json
+
+- 파일 생성 및 설정
+
+npm i
+
+- npm i -D ts-node
+  > typescript 를 실행 시켜주는 기능
+- npm i -D @types/node
+  > js node 패키지의 d.ts(typescript 정의)파일 정의
+- npm i nodemon
+  > nodemon 설치
