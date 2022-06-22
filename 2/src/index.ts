@@ -93,15 +93,15 @@ class MafiaGame implements MafiaRule {
   public addpoliceCount = (count: number) => {
     this.policeCount = count;
   };
-  public addMafiaCount = (count: number) => {
+  public addmafiaCount = (count: number) => {
     this.mafiaCount = count;
   };
 }
 
 const Game = new MafiaGame();
-Game.addPlayerCount(7);
+Game.addPlayerCount(10);
 Game.adddoctorCount(1);
 Game.addpoliceCount(1);
-Game.addMafiaCount(2);
+Game.addmafiaCount(2);
 Game.start();
 console.log(Game.player);
