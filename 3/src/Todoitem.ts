@@ -6,7 +6,7 @@ interface itemRule {
 }
 
 class TodoItem implements itemRule {
-  constructor(readonly id: number, readonly task: string, public complete: boolean) {}
+  constructor(readonly id: number, readonly task: string, public complete: boolean = false) {}
   public printDetails(): void {
     console.log(`${this.id}\t${this.task}\t${this.complete ? "\t(complete)" : ""}`);
   }
