@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const Todoitem_1 = __importDefault(require("./model/Todoitem"));
+const Todoitem_1 = __importDefault(require("../model/Todoitem"));
 class TodoCollection {
     constructor(userName, todoItems = []) {
         this.userName = userName;
@@ -32,6 +32,9 @@ class TodoCollection {
                 this.itemMap.delete(item.id);
             }
         });
+    }
+    getItemCounts() {
+        return { total: this.itemMap.size, incomplete: this.getTodoItems(false).length };
     }
     markComplete(id, complete) {
         const todoItem = this.getTodoById(id);
